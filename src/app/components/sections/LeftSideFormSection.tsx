@@ -5,36 +5,65 @@ import kaskodCIO from '@/assets/KASKOD_CIO.png';
 import Image from 'next/image';
 import { Separator } from '@/@/conponents/ui/separator';
 import LocalSwitcher from '../LocalSwitcher';
+import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 export function LeftSideFormSection() {
+  const t = useTranslations('leftSection');
   return (
-    <div className='leftSideBg w-auto lg:w-[32%] p-8 h-full text-white'>
+    <div className='leftSideBg w-auto lg:w-[32%] p-8 min-h-[47rem] text-white'>
       <div className='flex flex-col justify-between h-full'>
         <div className='flex flex-col gap-14 mb-14'>
-          <div className='flex justify-between'>
-            <Image
-              width={80}
-              height={80}
-              src={kaskodLogo}
-              alt='Kaskod white logo'
-            />
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+            className='flex justify-between'>
+            <a href='https://kaskod.dev/'>
+              <Image
+                width={80}
+                height={80}
+                src={kaskodLogo}
+                alt='Kaskod white logo'
+              />
+            </a>
+
             <LocalSwitcher />
-          </div>
+          </motion.div>
           <div className='flex flex-col gap-8'>
-            <h1 className='text-4xl font-bold'>
-              Start your project with KASKOD!
-            </h1>
-            <p className='font-thin'>
-              Tell us more about your business goals. We’ll get back to you
-              within 1 working day.
-            </p>
-            <p className='font-normal'>
-              Curious about what we can do for you? We are happy to tell you
-              more!
-            </p>
+            <motion.h1
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
+              className='text-2xl lg:text-4xl font-bold'
+              dangerouslySetInnerHTML={{ __html: t('title') }}
+            />
+
+            <motion.p
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1 }}
+              className='font-thin'
+              dangerouslySetInnerHTML={{ __html: t('paragraph1') }}
+            />
+            <motion.p
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1.5 }}
+              className='font-normal'
+              dangerouslySetInnerHTML={{ __html: t('paragraph2') }}
+            />
           </div>
         </div>
-        <div className='flex flex-col gap-2'>
+        <motion.div
+          viewport={{ once: true }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1.5 }}
+          className='flex flex-col gap-2'>
           <div className='flex flex-col gap-3'>
             <div className='flex gap-5 items-center'>
               <Image
@@ -58,10 +87,10 @@ export function LeftSideFormSection() {
           <Separator className='bg-[#C3C2D4] my-5' />
 
           <p className='text-xs'>
-            Have any other questions? Write to me via email{' '}
+            {t('paragraphEnd')}{' '}
             <span className='text-[#3D46FB]'>valerie.novembre@gmx.fr</span>
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

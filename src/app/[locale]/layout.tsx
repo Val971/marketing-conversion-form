@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
@@ -20,9 +21,14 @@ export default function RootLayout({
   children,
   params: { locale },
 }: Readonly<RootLayoutProps>) {
+  const messages = useMessages();
   return (
-    <html lang={locale}>
-      <body className={inter.className}>{children}</body>
+    <html suppressHydrationWarning={true} lang={locale}>
+      <body suppressHydrationWarning={true} className={inter.className}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          {children}
+        </NextIntlClientProvider>
+      </body>
     </html>
   );
 }

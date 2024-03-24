@@ -4,14 +4,6 @@ export enum QuestionType {
   INPUT = 'input',
   TEXTAREA = 'textarea',
 }
-export enum ServiceType {
-  DEVELOPEMENT = 'Development',
-  WEB_DEV = 'Web development',
-  MOBILE_APP = 'Mobile app',
-  WEB_DESIGN = 'Web Design',
-  MARKETING = 'Marketing',
-  OTHER = 'Other',
-}
 
 export enum FormActionKind {
   services_data = 'FETCH_SERVICES_DATA',

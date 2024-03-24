@@ -1,16 +1,33 @@
 'use client';
-import React from 'react';
-import { useMultistepForm } from '@/app/utils/useMultistepForm';
-import { usePathname } from 'next/navigation';
+import { createLocalizedPathnamesNavigation } from 'next-intl/navigation';
+
+import React, { startTransition } from 'react';
+import { useParams } from 'next/navigation';
+import { locales, pathnames } from '@/middleware';
 
 export default function LocalSwitcher() {
-  const locale = usePathname()?.split('/')[1];
-  const { setLanguage } = useMultistepForm();
+  const { usePathname, useRouter } = createLocalizedPathnamesNavigation({
+    locales,
+    pathnames,
+  });
+  const router = useRouter();
+  const pathname = usePathname();
+  const params = useParams();
+
+  const onSelectChange = (lang: string) => {
+    startTransition(() => {
+      router.replace(
+        // @ts-expect-error -- TypeScript will validate that only known `params`
+        { pathname, params },
+        { locale: lang }
+      );
+    });
+  };
   return (
     <button
-      onClick={() => setLanguage(locale)}
+      onClick={() => onSelectChange(params.locale === 'fr' ? 'en' : 'fr')}
       className='border-2 border-white rounded-full p-3 h-12 cursor-pointer'>
-      {`${locale === 'fr' ? 'EN' : 'FR'}`}
+      {`${params.locale === 'fr' ? 'EN' : 'FR'}`}
     </button>
   );
 }

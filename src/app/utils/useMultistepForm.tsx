@@ -1,12 +1,12 @@
 'use client';
 import { startTransition, useState } from 'react';
-import { steps } from '@/app/datas/steps';
 import { useRouter } from 'next/navigation';
 
 export const useMultistepForm = () => {
-  const [sptepsLength, setSptepsLength] = useState<number>(steps.length);
+  const [sptepsLength, setSptepsLength] = useState<number>(6);
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
+  const [isSending, setIsSending] = useState(false);
   const router = useRouter();
 
   const next = () => {
@@ -35,5 +35,7 @@ export const useMultistepForm = () => {
     setLanguage,
     isLoading,
     setIsLoading,
+    isSending,
+    setIsSending,
   };
 };
