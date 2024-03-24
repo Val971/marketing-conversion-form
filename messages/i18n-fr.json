@@ -1,0 +1,85 @@
+{
+  "Confirmation": {
+    "backbtn": "Retour au site Kaskod.ked",
+    "title": "Merci d'avoir rempli le formulaire!",
+    "text": "Merci d'avoir rempli le formulaire ! Nous vous contacterons sous peu."
+  },
+  "naviagtion": {
+    "back": "Précédent",
+    "next": "Suivant",
+    "submit": "Envoyer",
+    "wait": "S'il vous plaît, attendez"
+  },
+  "leftSection": {
+    "title": "Démarrez votre projet avec KASKOD&nbsp;!",
+    "paragraph1": "Parlez-moi de vos objectifs commerciaux. Je vous répondrai dans un délai d'un jour ouvrable.",
+    "paragraph2": "Curieux de savoir ce que je peux faire pour vous? je suis heureuse de vous en dire plus!",
+    "paragraphEnd": "Vous avez d'autres questions&nbsp;? Écrivez-moi par email"
+  },
+  "rigthSection": {
+    "steps": {
+      "informations": "Informations",
+      "services": "Services",
+      "budget": "Budget",
+      "Time": "Temps",
+      "Design": "Conception",
+      "Submit": "Envoyer"
+    },
+    "form": {
+      "question1": {
+        "title": "Détails du contact",
+        "subTitle": "Merci de renseigner vos informations afin que je puisse vous recontacter.",
+        "option1": {
+          "required": "Votre nom est obligatoire",
+          "title": "Nom",
+          "placeholder": "Entrez votre nom"
+        },
+        "option2": {
+          "required": "Votre courriel est obligatoire",
+          "title": "Courriel",
+          "placeholder": "Enter your courriel"
+        },
+        "option3": {
+          "title": "Numéro de téléphone",
+          "placeholder": "(123) 456 - 7890"
+        },
+        "option4": {
+          "title": "Entreprise",
+          "placeholder": "Nom de l'entreprise"
+        }
+      },
+      "question2": {
+        "title": "Mes services",
+        "subTitle": "Veuillez sélectionner le service qui vous intéresse.",
+        "required": "La sélection d'un service est obligatoire",
+        "option1Title": "Développement web",
+        "option2Title": "Application mobile",
+        "option3Title": "Design",
+        "option4Title": "Marketing",
+        "option5Title": "Autre"
+      },
+      "question3": {
+        "title": "Quel est le budget de votre projet ?",
+        "subTitle": "Veuillez sélectionner la fourchette de budget du projet que vous avez en tête.",
+        "required": "La sélection d'un budget est obligatoire"
+      },
+      "question4": {
+        "title": "Quel est votre délai de réalisation prévu pour ce projet ?",
+        "subTitle": "Veuillez sélectionner le temps prévue que vous avez en tête.",
+        "required": "Sélectionnez un temps est requis",
+        "option1Title": "Moins d'un mois",
+        "option2Title": "Entre un et trois mois",
+        "option3Title": "Entre trois et six mois",
+        "option4Title": "Plus de six mois"
+      },
+      "question5": {
+        "title": "Avez-vous déjà une idée du design ou des fonctionnalités de votre application ?",
+        "subTitle": "Veuillez sélectionner une des réponses.",
+        "required": "La sélection d'une réponse est obligatoire",
+        "option1Title": "Oui, je peux fournir des maquettes ou des spécifications détaillées.",
+        "option2Title": "Non, je recherche des conseils et des suggestions.",
+        "option3Title": "Je n'y ai pas encore pensé."
+      }
+    }
+  }
+}

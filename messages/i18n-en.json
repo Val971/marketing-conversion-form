@@ -1,0 +1,85 @@
+{
+  "Confirmation": {
+    "backbtn": "Back to Kaskod.dev",
+    "title": "Thank you for submitting!",
+    "text": "Thank you for completing the form! I'll be in touch with you shortly."
+  },
+  "naviagtion": {
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "wait": "Please wait"
+  },
+  "leftSection": {
+    "title": "Start your project with KASKOD&nbsp;!",
+    "paragraph1": "Tell me more about your business goals. I will get back to you within 1 working day.",
+    "paragraph2": "Curious about what I can do for you&nbsp;? i'm happy to tell you more!",
+    "paragraphEnd": "Have any other questions&nbsp;? Write to me via email"
+  },
+  "rigthSection": {
+    "steps": {
+      "informations": "Informations",
+      "services": "Services",
+      "budget": "Budget",
+      "Time": "Time",
+      "Design": "Design",
+      "Submit": "Submit"
+    },
+    "form": {
+      "question1": {
+        "title": "Contact details",
+        "subTitle": "Please fill your information so I can get in touch with you.",
+        "option1": {
+          "required": "Your name is required",
+          "title": "Name",
+          "placeholder": "Enter your name"
+        },
+        "option2": {
+          "required": "Your email is required",
+          "title": "Email",
+          "placeholder": "Enter your email"
+        },
+        "option3": {
+          "title": "Phone Number",
+          "placeholder": "(123) 456 - 7890"
+        },
+        "option4": {
+          "title": "Company",
+          "placeholder": "Company name"
+        }
+      },
+      "question2": {
+        "title": "My services",
+        "subTitle": "Please select which service you are interested in.",
+        "required": "Select a service is required",
+        "option1Title": "Web development",
+        "option2Title": "Mobile app",
+        "option3Title": "Web Design",
+        "option4Title": "Marketing",
+        "option5Title": "Other"
+      },
+      "question3": {
+        "title": "What’s your project budget?",
+        "subTitle": "Please select the project budget range you have in mind.",
+        "required": "Select a budget is required"
+      },
+      "question4": {
+        "title": "What is your expected completion time for this project?",
+        "subTitle": "Please select your expected completion time you have in mind.",
+        "required": "Select a time is required",
+        "option1Title": "Less than a month",
+        "option2Title": "Between one and three months",
+        "option3Title": "Between three and six months",
+        "option4Title": "More than six months"
+      },
+      "question5": {
+        "title": "Do you already have an idea of the design or functionality of your app?",
+        "subTitle": "Check all options that apply.",
+        "required": "Select a design is required",
+        "option1Title": "Yes, I can provide mock-ups or detailed specifications.",
+        "option2Title": "No, I'm looking for advice and suggestions.",
+        "option3Title": "I haven't thought about this yet."
+      }
+    }
+  }
+}
