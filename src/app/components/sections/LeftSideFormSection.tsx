@@ -86,8 +86,11 @@ export function LeftSideFormSection() {
           </div>
           <Separator className='bg-[#C3C2D4] my-5' />
 
+          <p
+            className='text-xs'
+            dangerouslySetInnerHTML={{ __html: t('paragraphEnd') }}
+          />
           <p className='text-xs'>
-            {t('paragraphEnd')}{' '}
             <span className='text-[#3D46FB]'>valerie.novembre@gmx.fr</span>
           </p>
         </motion.div>

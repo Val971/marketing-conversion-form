@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { Inter } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 
 interface RootLayoutProps {
@@ -24,6 +25,18 @@ export default function RootLayout({
   const messages = useMessages();
   return (
     <html suppressHydrationWarning={true} lang={locale}>
+      <head>
+        <Script
+          async
+          src='https://www.googletagmanager.com/gtag/js?id=G-RG9WVXCKJ3'></Script>
+        <Script id='google-analytics'>
+          {`  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RG9WVXCKJ3');`}
+        </Script>
+      </head>
       <body suppressHydrationWarning={true} className={inter.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}

@@ -2,7 +2,9 @@
   "Confirmation": {
     "backbtn": "Retour au site Kaskod.ked",
     "title": "Merci d'avoir rempli le formulaire!",
-    "text": "Merci d'avoir rempli le formulaire ! Nous vous contacterons sous peu."
+    "text": "Merci d'avoir rempli le formulaire&nbsp;! Nous vous contacterons sous peu.",
+    "paragraph1": "Une erreur s'est produite lors de la transmission de la requête.",
+    "paragraph2": "Veuillez vérifier votre connexion Internet et réessayer ultérieurement."
   },
   "naviagtion": {
     "back": "Précédent",
@@ -12,7 +14,7 @@
   },
   "leftSection": {
     "title": "Démarrez votre projet avec KASKOD&nbsp;!",
-    "paragraph1": "Parlez-moi de vos objectifs commerciaux. Je vous répondrai dans un délai d'un jour ouvrable.",
+    "paragraph1": "Parlez-moi de vos objectifs commerciaux. Je vous répondrai dans un délai d'un&nbsp;jour ouvrable.",
     "paragraph2": "Curieux de savoir ce que je peux faire pour vous? je suis heureuse de vous en dire plus!",
     "paragraphEnd": "Vous avez d'autres questions&nbsp;? Écrivez-moi par email"
   },
@@ -21,9 +23,9 @@
       "informations": "Informations",
       "services": "Services",
       "budget": "Budget",
-      "Time": "Temps",
-      "Design": "Conception",
-      "Submit": "Envoyer"
+      "time": "Temps",
+      "design": "Conception",
+      "submit": "Envoyer"
     },
     "form": {
       "question1": {

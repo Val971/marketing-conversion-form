@@ -1,9 +1,4 @@
 import { FieldErrors } from 'react-hook-form';
-import {
-  FormAction,
-  FormActionKind,
-  FormDataProps,
-} from '@/app/utils/FormType';
 import React from 'react';
 
 export class FormUtils {
@@ -28,45 +23,6 @@ export class FormUtils {
         return template(errors.features ? errors.features.message : '');
       case 'design':
         return template(errors.design ? errors.design.message : '');
-    }
-  };
-  static reducer = (
-    state: FormDataProps,
-    action: FormAction
-  ): FormDataProps => {
-    if (!action) {
-      return state;
-    }
-    switch (action.type) {
-      case FormActionKind.fetch_client_information_data:
-        return {
-          ...state,
-          clientInformation: action.payload,
-        };
-      case FormActionKind.services_data:
-        return {
-          ...state,
-          service: action.payload,
-        };
-      case FormActionKind.budget:
-        return {
-          ...state,
-          budget: action.payload,
-        };
-      case FormActionKind.design:
-        return {
-          ...state,
-          design: action.payload,
-        };
-      case FormActionKind.time:
-        return {
-          ...state,
-          time: action.payload,
-        };
-      case FormActionKind.failure:
-        return { ...state };
-      default:
-        return state;
     }
   };
 }

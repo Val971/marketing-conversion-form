@@ -2,7 +2,9 @@
   "Confirmation": {
     "backbtn": "Back to Kaskod.dev",
     "title": "Thank you for submitting!",
-    "text": "Thank you for completing the form! I'll be in touch with you shortly."
+    "text": "Thank you for completing the form&nbsp;! I'll be in touch with you shortly.",
+    "paragraph1": "An error occurred while transmitting the request.",
+    "paragraph2": "Please check your Internet connection and try again later."
   },
   "naviagtion": {
     "back": "Back",
@@ -12,7 +14,7 @@
   },
   "leftSection": {
     "title": "Start your project with KASKOD&nbsp;!",
-    "paragraph1": "Tell me more about your business goals. I will get back to you within 1 working day.",
+    "paragraph1": "Tell me more about your business goals. I will get back to you within 1&nbsp;working day.",
     "paragraph2": "Curious about what I can do for you&nbsp;? i'm happy to tell you more!",
     "paragraphEnd": "Have any other questions&nbsp;? Write to me via email"
   },
@@ -21,9 +23,9 @@
       "informations": "Informations",
       "services": "Services",
       "budget": "Budget",
-      "Time": "Time",
-      "Design": "Design",
-      "Submit": "Submit"
+      "time": "Time",
+      "design": "Design",
+      "submit": "Submit"
     },
     "form": {
       "question1": {
