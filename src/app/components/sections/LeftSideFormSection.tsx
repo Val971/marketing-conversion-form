@@ -75,7 +75,7 @@ export function LeftSideFormSection() {
               />
               <div>
                 <p className='font-bold text-lg'>Valérie Novembre</p>
-                <p className='text-sm font-thin'>Developer</p>
+                <p className='text-sm font-thin'>{t('work')}</p>
               </div>
             </div>
 
