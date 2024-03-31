@@ -151,7 +151,7 @@ export function FormSection() {
                       subTitle={state.clientInformation?.subTitle}
                     />
 
-                    <div className='grid grid-cols-2 gap-x-5 '>
+                    <div className='grid md:grid-cols-2 gap-x-5 '>
                       {state.clientInformation &&
                         state.clientInformation.options &&
                         state.clientInformation.options.map((option) => {
